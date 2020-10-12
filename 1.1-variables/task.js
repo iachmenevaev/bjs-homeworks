@@ -6,6 +6,11 @@
  */
 
 function averageMark(a, g, p) {
+	var algebra = a;
+    var geography = g;
+    var physics = p;
+    var x = (algebra + geography +physics) / 3;
+    return x;
 	
     // реализуйте здесь задание №1
     
@@ -13,10 +18,13 @@ function averageMark(a, g, p) {
 }
 
 function sayHello(userName) {
+	var myName = userName;
+	var message = `Привет, мир!Меня зовут ${myName}`;
+		return message;
 	
     // реализуйте здесь задание №2
     
-	return // ваш ответ;
+	// ваш ответ;
 }
 
 function calculateFormula() {
