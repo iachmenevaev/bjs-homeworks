@@ -1,16 +1,19 @@
+"use strict";
 function getResult(a,b,c){
-    "use strict";
-    var D = Math.pow(b,2) - (4 * a * c);
-    var x1 = (-b + Math.sqrt(D)) /(2 * a);
-    var x2 = (-b - Math.sqrt(D)) /(2 * a);
-    var x3 = -b / (2 * a);
-      if (D < 0){
-          return [ ];
-      } else if (D > 0) {
-          return [x1,x2]
+    let D = Math.pow(b,2) - (4 * a * c);
+    let x = [];
+        if (D > 0) {
+        let x1 = (-b + Math.sqrt(D)) /(2 * a);
+        let x2 = (-b - Math.sqrt(D)) /(2 * a);
+        x.push(x1,x2);
+          return x;
       } else if  (D == 0){
-          return [x3];
+        let x3 = -b / (2 * a);
+        x.push(x3);
+          return x;
       }
+      else 
+      return x;
      }
   
   
@@ -19,19 +22,18 @@ function getResult(a,b,c){
 
 
 function getAverageMark(marks){
-    var sum = 0;
+    let sum = 0;
     if (marks.length === 0) {
       return 0 ;
     }
     if (marks.length > 5 ){
-       var marks = marks.slice(0, 5);
+       let marks = marks.slice(0, 5);
     }
 
-     for (var i = 0; i < marks.length; i++){
+     for (let i = 0; i < marks.length; i++){
           sum =sum + marks[i] ;
         }   
-        var averageMark = sum/marks.length;
-         return averageMark;
+        return sum/marks.length;
       }  
 function askDrink(name,dateOfBirthday){
     // код для задачи №3 писать здесь
