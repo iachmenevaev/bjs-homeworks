@@ -30,14 +30,12 @@ function showSolutionsMessage(a, b, c){
     if ( result.D < 0) {
         console.log('Уравнение не имеет вещественных корней');
     } else if (result.D === 0){
-        console.log('Уравнение имеет один корень X'+ s2 + '=' + result [roots]);
+        console.log('Уравнение имеет один корень X'+ s2 + '=' + result.roots);
     }else if (result.D > 0) {
         console.log ('Уравнение имеет два корня X' + s2 +'=' + result.roots[0] + ", x" + s3 + '='+ result.roots[1]);
     }
     }
-    // getSolutions(1, 5, 4);
-    // showSolutionsMessage(1,5,4);
-
+    
 
     //
     //задача 2
