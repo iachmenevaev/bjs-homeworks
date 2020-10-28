@@ -5,8 +5,6 @@ function getSolutions( a, b, c ) {
     let results = {
         D , roots
     }
-    let x1 = (-b + Math.sqrt(D)) /(2 * a);
-    let x2 = (-b - Math.sqrt(D)) /(2 * a);
 if (D < 0) {
     return results;
 } else if (D == 0){
@@ -26,13 +24,13 @@ function showSolutionsMessage(a, b, c){
     const s2 ='\u2081';
     const s3 = '\u2083';
     console.log ('Вычисляем корни квадратного уравнения'+ a + 'x'+ s1 + b + 'x'+ c);
-    console.log ( 'Значение дискриминанта: ' + results[D]);
-    if ( results = { D ,roots:'[]'}) {
+    console.log ( 'Значение дискриминанта: ' + result[D]);
+    if ( result [D] < 0) {
         console.log('Уравнение не имеет вещественных корней');
-    } else if (results = {D , x3}){
-        console.log('Уравнение имеет один корень X'+ s2 + '=' + x3);
-    }else if (results ={ D,roots: [x1,x2] } ) {
-        console.log ('Уравнение имеет два корня X' + s2 +'=' + x1 + ", x" + s3 + '='+ x2);
+    } else if (result [D] = 0){
+        console.log('Уравнение имеет один корень X'+ s2 + '=' + result [x3]);
+    }else if (result [D] > 0) {
+        console.log ('Уравнение имеет два корня X' + s2 +'=' + result[x1] + ", x" + s3 + '='+ result[x2]);
     }
     }
     //
