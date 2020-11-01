@@ -1,10 +1,10 @@
 
 String.prototype.isPalindrome = 
  function isPalindrome() {
-   let String = this.toLowerCase();
-    let n = String.length;
+   let Str = this.toLowerCase();
+    let n = Str.length;
     for (let i = 0; i < n; i++)
-        if (String [i] === String[ n - i - 1]){
+        if (Str [i] === Str[ n - i - 1]){
             return true;
         }
         else {
